@@ -1,0 +1,153 @@
+section#about .about-box p,
+section#about .mission p,
+section#about .vision p{
+  text-align: justify;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+section#about #about-us,
+section#about #our-values {
+  padding-left: 15px;
+}
+
+section#about .values-box {
+  margin-top: 30px;
+}
+
+section#about .mission .text-container{
+  background: rgb(250,179,28);
+}
+
+section#about .vision .text-container{
+  background: rgb(43,43,43);
+}
+
+section#about .vision,
+section#about .mission {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+}
+
+section#about .vision .text-container,
+section#about .mission .text-container {
+  padding: 20px;
+}
+
+section#about .vision .text-container p,
+section#about .vision .text-container h3 {
+  color: rgb(255,255,255);
+}
+
+section#about .mission .text-container p,
+section#about .mission .text-container h3 {
+  color: rgb(43,43,43);
+}
+
+section#about .vision .text-container p,
+section#about .mission .text-container p {
+  font-size: 13px;
+}
+
+section#services h5 {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: auto;
+  margin: 0 0 5px;
+  color: #383339;
+}
+
+.progress-bar span {
+  position: absolute;
+  right: -21px;
+  top: 0;
+  margin-top: -16px;
+  color: #fff;
+  background: rgb(250,179,28);
+  width: 42px;
+  height: 42px;
+  font-size: 11px;
+  font-weight: bold;
+  border-radius: 50%;
+  display: inline-block;
+  padding-top: 11px;
+}
+
+.progress,
+.progress .progress-bar {
+  overflow: visible;
+  height: 10px;
+}
+
+.progress-bar {
+  background: rgb(43,43,43);
+}
+
+.g-mb-45 {
+  margin-bottom: 45px !important;
+}
+
+h1, h2, h3, h4, h5 {
+  text-transform: uppercase;
+}
+
+#services .service-box p {
+  text-align: justify;
+}
+
+i.fa-chevron-right {
+  float: right;
+}
+
+i.fa-chevron-left {
+  float: left;
+}
+
+.delay-1ms {
+  -webkit-animation-delay: 0.1s; /* Chrome, Safari, Opera */
+  animation-delay: 0.1s;
+}
+
+.delay-2ms {
+  -webkit-animation-delay: 0.2s; /* Chrome, Safari, Opera */
+  animation-delay: 0.2s;
+}
+
+.delay-3ms {
+  -webkit-animation-delay: 0.3s; /* Chrome, Safari, Opera */
+  animation-delay: 0.3s;
+}
+
+.delay-4ms {
+  -webkit-animation-delay: 0.4s; /* Chrome, Safari, Opera */
+  animation-delay: 0.4s;
+}
+
+.delay-5ms {
+  -webkit-animation-delay: 0.5s; /* Chrome, Safari, Opera */
+  animation-delay: 0.5s;
+}
+
+#myCanvasBox {
+  position: relative;
+  width: 100%;
+  padding-bottom: 60%;
+  float: left;
+  height: 0;
+}
+
+
+#myCanvasContainer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+}

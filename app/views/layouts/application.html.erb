@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Design - Soluciones de Ingeniería</title>
+    <%= favicon_link_tag 'content/logo-ico.ico' %>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+  <body id="body" data-spy="scroll" data-target=".one-page-header" class="demo-lightbox-gallery">
+    <%= yield %>
+  </body>
+</html>

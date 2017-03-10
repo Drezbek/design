@@ -1,0 +1,571 @@
+<!--=== Header ===-->
+<nav class="one-page-header navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="menu-container page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to '', '#body', class: 'navbar-brand' %>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <div class="menu-container">
+        <ul class="nav navbar-nav">
+          <li class="page-scroll home">
+            <a href="#body">Inicio</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#about">Nosotros</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#services">Servicios</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#clients">Clientes</a>
+          </li>
+          <li class="page-scroll">
+            <a href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
+</nav>
+<!--=== End Header ===-->
+
+<!-- Intro Section -->
+<section id="intro" class="intro-section">
+  <div class="fullscreenbanner-container">
+    <div class="fullscreenbanner">
+      <ul>
+        <!-- SLIDE 1 -->
+        <li data-transition="curtain-1" data-slotamount="5" data-masterspeed="700" data-title="Slide 1">
+          <!-- MAIN IMAGE -->
+          <%=  image_tag('content/sliders/bg1.jpg', alt: 'slidebg1', 'data-bgfit': 'cover', 'data-bgposition': 'center center', 'data-bgrepeat': 'no-repeat') %>
+          <!-- LAYERS -->
+          <div class="tp-caption rs-caption-1 sft start"
+               data-x="center"
+               data-hoffset="0"
+               data-y="100"
+               data-speed="800"
+               data-start="2000"
+               data-easing="Back.easeInOut"
+               data-endspeed="300" style="text-transform: uppercase">
+            Design Ingeniería
+          </div>
+
+          <!-- LAYER -->
+          <div class="tp-caption rs-caption-2 sft"
+               data-x="center"
+               data-hoffset="0"
+               data-y="200"
+               data-speed="1000"
+               data-start="3000"
+               data-easing="Power4.easeOut"
+               data-endspeed="300"
+               data-endeasing="Power1.easeIn"
+               data-captionhidden="off"
+               style="z-index: 6 ">
+            Propocionamos soluciones a tus problemas de Ingeniería<br>
+            Profesionales capacitados a tu servicio
+          </div>
+
+          <!-- LAYER -->
+          <div class="tp-caption rs-caption-3 sft"
+               data-x="center"
+               data-hoffset="0"
+               data-y="360"
+               data-speed="800"
+               data-start="3500"
+               data-easing="Power4.easeOut"
+               data-endspeed="300"
+               data-endeasing="Power1.easeIn"
+               data-captionhidden="off"
+               style="z-index: 6">
+            <span class="page-scroll"><a href="#about" class="btn-u btn-brd btn-brd-hover btn-u-light">Conoce más sobre nosotros</a></span>
+          </div>
+        </li>
+
+        <!-- SLIDE 2 -->
+        <li data-transition="slideup" data-slotamount="5" data-masterspeed="1000" data-title="Slide 2">
+          <!-- MAIN IMAGE -->
+          <%=  image_tag('content/sliders/bg2.jpg', alt: 'slidebg2', 'data-bgfit': 'cover', 'data-bgposition': 'center center', 'data-bgrepeat': 'no-repeat') %>
+
+          <!-- LAYERS -->
+          <div class="tp-caption rs-caption-1 sft start"
+               data-x="center"
+               data-hoffset="0"
+               data-y="100"
+               data-speed="800"
+               data-start="1500"
+               data-easing="Back.easeInOut"
+               data-endspeed="300" style="text-transform: uppercase">
+            Nuestros servicios
+          </div>
+
+          <!-- LAYER -->
+          <div class="tp-caption rs-caption-2 sft"
+               data-x="center"
+               data-hoffset="0"
+               data-y="200"
+               data-speed="1000"
+               data-start="2500"
+               data-easing="Power4.easeOut"
+               data-endspeed="300"
+               data-endeasing="Power1.easeIn"
+               data-captionhidden="off"
+               style="z-index: 6">
+            Trabajamos en proyectos que se encuentren en etapa de diseño o de ejecución<br>
+            Ofrecemos servicios de asesoría, inspección técnica y desarrollo de proyectos
+          </div>
+
+          <!-- LAYER -->
+          <div class="tp-caption rs-caption-3 sft"
+               data-x="center"
+               data-hoffset="0"
+               data-y="360"
+               data-speed="800"
+               data-start="3500"
+               data-easing="Power4.easeOut"
+               data-endspeed="300"
+               data-endeasing="Power1.easeIn"
+               data-captionhidden="off"
+               style="z-index: 6">
+            <span class="page-scroll"><a href="#services" class="btn-u btn-brd btn-brd-hover btn-u-light">Conoce más sobre nuestros servicios</a></span>
+          </div>
+        </li>
+
+        <!-- SLIDE 3 -->
+        <li data-transition="slideup" data-slotamount="5" data-masterspeed="700"  data-title="Slide 3">
+          <!-- MAIN IMAGE -->
+          <%=  image_tag('content/sliders/bg3.jpg', alt: 'slidebg3', 'data-bgfit': 'cover', 'data-bgposition': 'center center', 'data-bgrepeat': 'no-repeat') %>
+
+          <!-- LAYERS -->
+          <div class="tp-caption rs-caption-1 sft start"
+               data-x="center"
+               data-hoffset="0"
+               data-y="110"
+               data-speed="800"
+               data-start="1500"
+               data-easing="Back.easeInOut"
+               data-endspeed="300" style="text-transform: uppercase">
+            Contáctanos
+          </div>
+
+          <!-- LAYER -->
+          <div class="tp-caption rs-caption-2 sfb"
+               data-x="center"
+               data-hoffset="0"
+               data-y="210"
+               data-speed="800"
+               data-start="2500"
+               data-easing="Power4.easeOut"
+               data-endspeed="300"
+               data-endeasing="Power1.easeIn"
+               data-captionhidden="off"
+               style="z-index: 6">
+            Contáctanos y explícanos tu proyecto<br>
+            Te ofreceremos una solución a la medida de tus necesidades
+          </div>
+
+          <!-- LAYER -->
+          <div class="tp-caption rs-caption-3 sfb"
+               data-x="center"
+               data-hoffset="0"
+               data-y="370"
+               data-speed="800"
+               data-start="3500"
+               data-easing="Power4.easeOut"
+               data-endspeed="300"
+               data-endeasing="Power1.easeIn"
+               data-captionhidden="off"
+               style="z-index: 6">
+            <span class="page-scroll"><a href="#contact" class="btn-u btn-brd btn-brd-hover btn-u-light">Recibe un presupuesto gratis</a></span>
+          </div>
+        </li>
+      </ul>
+      <div class="tp-bannertimer tp-bottom"></div>
+      <div class="tp-dottedoverlay twoxtwo"></div>
+    </div>
+  </div>
+</section>
+<!-- End Intro Section -->
+
+<!--  About Section -->
+<section id="about">
+  <div class="container content-lg">
+    <div class="title-v1 wow slideInLeft">
+      <h2>Nosotros</h2>
+      <p>Un equipo de profesionales a tu servicio</p>
+    </div>
+    <div class="row margin-bottom-30">
+      <h3 id="about-us" class="wow slideInLeft delay-1ms">Quiénes somos</h3>
+      <div class="about-box col-md-6">
+        <p class="wow slideInLeft delay-1ms">Somos una empresa joven y dinámica conformada por un equipo de profesionales de distintas áreas de la ingeniería.  Nos dedicamos al análisis y al desarrollo de proyectos urbanos, habitacionales e industriales que se encuentren en etapa de prefactibilidad, factibilidad, de detalle o de ejecución. Ofrecemos servicios de asesoría, inspección técnica y desarrollo de proyectos. Contamos con experiencia y amplia preparación para ofrecer soluciones fiables, de calidad y adaptadas a las necesidades de cada uno de nuestros clientes.</p>
+
+        <div class="values-box">
+          <div class="row">
+            <h3 id="our-values" class="wow slideInLeft delay-2ms">Nuestros valores</h3>
+            <div class="col-md-6 wow bounceInLeft delay-2ms">
+              <p><strong>Excelencia:</strong> Deseamos ser los mejores. Perseguimos la excelencia a través del perfeccionamiento continuo de nuestros productos y servicios.</p>
+            </div>
+            <div class="col-md-6 wow bounceInRight delay-2ms">
+              <p><strong>Compromiso con el cliente:</strong> Estamos com- prometidos a servir y apoyar. Trabajamos con intensidad para satisfacer al máximo las necesidades de nuestros clientes.</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 wow bounceInLeft delay-3ms">
+              <p><strong>Determinación:</strong> Crecemos frente a los de- safíos. Tenemos la convicción de luchar por los objetivos de nuestros clientes como si fueran los nuestros propios.</p>
+            </div>
+            <div class="col-md-6 wow bounceInRight delay-3ms">
+              <p><strong>Pasión por el trabajo:</strong> Amamos lo que hacemos y hacemos lo que amamos. Imprimimos pasión y esfuerzo a cada uno de los proyectos en los que trabajamos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 wow slideInRight delay-1ms">
+        <div class="owl-team">
+          <%=  image_tag('content/team/t1.jpg', alt: 'Equipo Design', class: 'img-responsive') %>
+          <%=  image_tag('content/team/t2.jpg', alt: 'Equipo Design', class: 'img-responsive') %>
+          <%=  image_tag('content/team/t3.jpg', alt: 'Equipo Design', class: 'img-responsive') %>
+        </div>
+      </div>
+    </div>
+
+    <div class="row margin-bottom-30 padding-left-5 padding-right-5">
+      <div class="mission col-md-6 wow fadeInLeft">
+        <div class="text-container">
+          <h3> Misión </h3>
+          <p>Nuestra misión es proporcionar apoyo y asistencia técnica durante las etapas de prefactibilidad, factibilidad, de detalle o de ejecución de un proyecto. Ser un aliado estratégico que reconoce desafíos, propone soluciones y contribuye de forma activa a que los planes del cliente se hagan realidad.</p>
+        </div>
+      </div>
+      <div class="vision col-md-6 wow fadeInRight">
+        <div class="text-container">
+          <h3> Visión </h3>
+          <p>
+            Nuestra visión es ser una compañía reconocida por el alto nivel técnico de nuestros trabajos, el grado de compromiso que asumimos con nuestros clientes y el valor agregado que añadimos con nuestros servicios. Convertirnos en un socio impres- cindible cuando se busca maximizar los beneficios y optimizar la inversión.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="parallax-quote parallaxBg wow fadeIn">
+    <div class="container">
+      <div class="parallax-quote-in">
+        <p>Estamos continuamente buscando la excelencia profesional motivados por enfrentar nuevos desafíos y el deseo de contribuir de forma activa a conseguir los objetivos de nuestros clientes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!--  About Section -->
+
+<!-- Services Section -->
+<section id="services">
+  <div class="container content-lg">
+    <div class="title-v1 wow slideInLeft">
+      <h2>Servicios</h2>
+      <p>Servicios pensados en tus necesidades</p>
+    </div>
+
+    <div class="row margin-bottom-30">
+      <div class="col-md-6">
+        <div class="row margin-bottom-15 wow bounceInDown">
+          <div class="padding-left-15">
+            <div class="service-advice"></div>
+            <div class="service-box">
+              <h3>Asesoría</h3>
+              <p>Ponemos a disposición de nuestros clientes toda nuestra experiencia y conocimientos técnicos en ingeniería para apoyarles en la toma de decisiones estrategicas y guiarles en el proceso de desarrollo de sus proyectos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="row margin-bottom-15 wow bounce delay-2ms">
+          <div class="padding-left-15">
+            <div class="service-inspection"></div>
+            <div class="service-box">
+              <h3>Inspección técnica de obra</h3>
+              <p>Verificamos en terreno, en representación de los mandantes, que las obras se construyan de acuerdo a los términos establecidos en el contrato de construcción. Con este servicio buscamos, a través de controles rigurosos de los procesos productivos, resolver todo tipo de conflictos o contingencias entre propietarios, proyectistas y empresas constructoras.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row margin-bottom-15 wow bounceInUp">
+          <div class="padding-left-15">
+            <div class="service-projects"></div>
+            <div class="service-box">
+              <h3>Desarrollo de proyectos</h3>
+              <p>Desarrollamos proyectos que se encuentren en etapas de prefactibilidad, factibilidad, de detalle o de ejecución. Proporcionamos documentos técnicos tales como planimetrías, memorias de cálculo, informes de especialidad y especificaciones técnicas. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 wow swing delay-5ms">
+        <div class="service-box-v1">
+          <div class="owl-services">
+            <div class="service-block service-block-default">
+              <div class="service-structural"></div>
+              <h2 class="heading-md">Ingeniería estructural</h2>
+              <!--<p>Diseño y cálculo de estructuras de albañilería, hormigón, acero, madera, etc.</p>-->
+              <p></p>
+              <ul class="list-unstyled">
+                <li>Diseño de galpones industriales, comerciales o agrícolas</li>
+                <li>Diseño de edificaciones habitacionales o comerciales</li>
+                <li>Diseño de letreros publicitarios</li>
+                <li>Diseño de fundaciones de equipos o maquinarias</li>
+                <li>Diseño de fundaciones especiales</li>
+                <li>Diseño de estructuras especiales como puentes, pasarelas, soportes</li>
+                <li>Tramitación y regularización de instalaciones</li>
+              </ul>
+            </div>
+            <div class=" service-block service-block-default">
+              <div class="service-sanitary"></div>
+              <h2 class="heading-sm">Ingeniería sanitaria</h2>
+              <!--<p>Análisis, diseño y dimensionamiento de sistemas de agua potable, alcantarillado sanitario y pluvial.</p>-->
+              <p></p>
+              <ul class="list-unstyled">
+                <li>Diseño de sistemas de alcantarillados</li>
+                <li>Diseño de sistemas de aguas lluvias</li>
+                <li>Diseño de redes de agua potable</li>
+                <li>Diseño de redes de riego</li>
+                <li>Diseño de redes de protección contra incendios</li>
+                <li>Desarrollo de proyectos sanitarios particulares</li>
+                <li>Tramitación y regularización de instalaciones</li>
+              </ul>
+            </div>
+
+            <div class="service-block service-block-default">
+              <div class="service-hydraulics"></div>
+              <h2 class="heading-sm">Ingeniería hidráulica</h2>
+              <p></p>
+              <ul class="list-unstyled">
+                <li>Diseño de redes de distribución de agua potable en alta</li>
+                <li>Diseño de redes de evacuación de agua residual en alta</li>
+                <li>Diseño de estaciones de bombeo y depósitos</li>
+                <li>Diseño de sistemas de evacuación de aguas residuales</li>
+                <li>Diseño de sistemas de bombeo y piping</li>
+                <li>Diseño de sistemas de canalización de agua</li>
+                <li>Cálculo hidrológico de cuencas</li>
+              </ul>
+            </div>
+            <div class="service-block service-block-default">
+              <div class="service-vial"></div>
+              <h2 class="heading-sm">Ingeniería vial</h2>
+              <p></p>
+              <ul class="list-unstyled">
+                <li>Diseño de pavimentos rígidos o flexibles</li>
+                <li>Diseño estructural de pavimentos, cortes y terraplenes</li>
+                <li>Diseño geométrico de vías</li>
+                <li>Diseño de infraestructura de soporte de sistema de transporte</li>
+                <li>Diseño de corredores e intersecciones viales</li>
+                <li>Diseños de infraestructura para transporte no motorizado</li>
+                <li>Desarrollo de proyectos de remodelación de calles y caminos</li>
+              </ul>
+            </div>
+            <div class="service-block service-block-default">
+              <div class="service-specialty"></div>
+              <h2 class="heading-sm">Ingeniería de especialidad</h2>
+              <p></p>
+              <ul class="list-unstyled">
+                <li>Desarrollo de proyecto de arquitectura</li>
+                <li>Desarrollo de proyecto eléctrico</li>
+                <li>Desarrollo de informe de declaración ambiental</li>
+                <li>Desarrollo de Proyecto conceptual</li>
+                <li>Desarrollo de maquetas 3D y modelamientos</li>
+              </ul>
+            </div>
+            <div class="service-block service-block-default">
+              <div class="service-civil-works"></div>
+              <h2 class="heading-sm">Ingeniería en obras civiles</h2>
+              <p></p>
+              <ul class="list-unstyled">
+                <li>Diseño en hormigones masivos</li>
+                <li>Diseño de muros de contención</li>
+                <li>Desarrollo de proyectos de movimiento de tierras</li>
+                <li>Análisis de estabilidad de taludes</li>
+                <li>Análisis topográficos</li>
+              </ul>
+            </div>
+            <div class="service-block service-block-default">
+              <div class="service-technical-inspection"></div>
+              <h2 class="heading-sm">Inspección técnica de obra</h2>
+              <p></p>
+              <ul class="list-unstyled">
+                <li>Supervición técnica de la obra</li>
+                <li>Inspección específica de especialidad: estructural, sanitaria, etc</li>
+                <li>Control de vigencia de pólizas de seguro y boletas de garantía</li>
+                <li>Control de avance físico y financiero de la construcción</li>
+                <li>Revisión y aprobación de estados de pago</li>
+                <li>Recepciones parciales y finales de obra</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row text-left">
+      <h3 class="wow slideInLeft" style="text-align: center;">Nuestra experiencia profesional</h3>
+      <div class="col-sm-6 padding-right-35">
+        <!-- Progress Bar -->
+        <div class="progress-box">
+          <h5>Ingeniería Estructural</h5>
+          <div class="progress g-mb-45">
+            <div class="progress-bar" role="progressbar" data-width="90"></div>
+          </div>
+
+          <h5>Ingeniería Sanitaria</h5>
+          <div class="progress g-mb-45">
+            <div class="progress-bar" role="progressbar" data-width="85"></div>
+          </div>
+
+          <h5>Ingeniería Hidráulica</h5>
+          <div class="progress g-mb-45">
+            <div class="progress-bar" role="progressbar" data-width="80"></div>
+          </div>
+        </div>
+        <!-- End Progress Bar -->
+      </div>
+      <div class="col-sm-6 padding-right-35">
+        <!-- Progress Bar -->
+        <div class="progress-box">
+          <h5>Ingeniería Vial</h5>
+          <div class="progress g-mb-45">
+            <div class="progress-bar" role="progressbar" data-width="70"></div>
+          </div>
+
+          <h5>Ingeniería de Especialidad</h5>
+          <div class="progress g-mb-45">
+            <div class="progress-bar" role="progressbar" data-width="80"></div>
+          </div>
+
+          <h5>Obras Civiles</h5>
+          <div class="progress g-mb-45">
+            <div class="progress-bar" role="progressbar" data-width="90"></div>
+          </div>
+        </div>
+        <!-- End Progress Bar -->
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Services Section -->
+
+<section id="clients">
+  <div class="container content-lg">
+    <div class="title-v1 wow slideInLeft">
+      <h2>Clientes</h2>
+      <p>Algunos de los clientes que han preferido nuestros servicios</p>
+    </div>
+    <div id="myCanvasBox">
+      <div id="myCanvasContainer">
+        <canvas id="myCanvas"></canvas>
+      </div>
+    </div>
+    <div id="tags">
+      <ul>
+        <li><%= link_to image_tag('content/clients/doma.png', alt: ''), 'https://www.domaconstruccion.cl/', target:'_blank' %></li>
+        <li><%= link_to image_tag('content/clients/domeyko.png', alt: ''), 'http://www.domeykomining.cl/', target:'_blank' %></li>
+        <li><%= link_to image_tag('content/clients/llorente.png', alt: ''), 'http://www.llorente.cl', target:'_blank' %></li>
+        <li><%= link_to image_tag('content/clients/mejillones.png', alt: ''), 'https://www.puertomejillones.cl/', target:'_blank' %></li>
+        <li><%= link_to image_tag('content/clients/rock-and-soccer.png', alt: ''), 'http://rockandsoccer.cl/web/', target:'_blank' %></li>
+        <li><%= link_to image_tag('content/clients/san-pedro.png', alt: ''), 'http://www.municipiosanpedrodeatacama.cl/', target: '_blank' %></li>
+        <li><%= link_to image_tag('content/clients/mantelech.png', alt: ''), 'http://mantelech.cl/', target: '_blank' %></li>
+        <li><%= link_to image_tag('content/clients/bridon.png', alt: ''), 'https://www.bridon-bekaert.com/', target: '_blank' %></li>
+        <li><%= link_to image_tag('content/clients/alpha.png', alt: ''), '#' %></li>
+        <li><%= link_to image_tag('content/clients/fullmelec.png', alt: ''), 'http://www.fullmelec.com/', target: '_blank' %></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contacts-section">
+  <div class="container content-lg">
+    <div class="wow slideInLeft title-v1">
+      <h2>Contáctanos</h2>
+      <p>Escríbenos, nos comunicaremos contigo a la brevedad</p>
+    </div>
+
+    <div class="row contacts-in">
+      <div class="col-md-6 md-margin-bottom-40">
+        <ul class="list-unstyled">
+          <li class="wow bounceInLeft"><i class="fa fa-home"></i> Arturo Prat 548 Of 401, Antofagasta, Chile</li>
+          <li class="wow bounceInLeft delay-1ms"><i class="fa fa-phone"></i> (55) 2-982909 </li>
+          <li class="wow bounceInLeft delay-2ms"><i class="fa fa-envelope"></i> <a href="contacto@des-ing.cl">contacto@des-ing.cl</a></li>
+          <li class="wow bounceInLeft delay-3ms"><i class="fa fa-globe"></i> <a href="http://des-ing.cl">www.des-ing.cl</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-6">
+        <%=	form_for :client, html: {id: 'sky-form3', class: 'sky-form contact-style' } do |m| %>
+            <%= field_set_tag do %>
+                <%= m.label :name, class: 'wow bounceInRight delay' do %>
+                    Nombre<span class="color-red">*</span>
+                <% end %>
+                <div class="row">
+                  <div class="col-md-7 margin-bottom-20 col-md-offset-0">
+                    <div>
+                      <%=	m.text_field :name, class: 'wow bounceInRight delay form-control' %>
+                    </div>
+                  </div>
+                </div>
+
+                <%=	 m.label :email, class: 'wow bounceInRight delay-1ms' do %>
+                    Correo electónico<span class="color-red">*</span>
+                <% end %>
+                <div class="row">
+                  <div class="col-md-7 margin-bottom-20 col-md-offset-0">
+                    <div>
+                      <%=	m.text_field :email, class: 'wow bounceInRight delay-1ms form-control' %>
+                    </div>
+                  </div>
+                </div>
+
+                <%=	 m.label :phone, class: 'wow bounceInRight delay-2ms' do %>
+                    Número de contacto<span class="color-red">*</span>
+                <% end %>
+                <div class="row">
+                  <div class="col-md-7 margin-bottom-20 col-md-offset-0">
+                    <div>
+                      <%=	m.text_field :phone, class: 'wow bounceInRight delay-2ms form-control' %>
+                    </div>
+                  </div>
+                </div>
+
+                <%=	 m.label :message, class: 'wow bounceInRight delay-3ms' do %>
+                    Mensaje<span class="color-red">*</span>
+                <% end %>
+                <div class="row">
+                  <div class="col-md-11 margin-bottom-20 col-md-offset-0">
+                    <div>
+                      <%=	m.text_area :message, rows: '8', class: 'wow bounceInRight delay-3ms form-control' %>
+                    </div>
+                  </div>
+                </div>
+
+                <%= m.button 'Enviar mensaje', 'data-style': 'zoom-in', 'data-size': 's', class: 'ladda-button btn-u btn-brd btn-brd-hover btn-u-dark wow bounceInRight delay-4ms' %>
+            <% end %>
+            <div class="message">
+              <i class="rounded-x fa fa-check"></i>
+              <p>Tu mensaje a sido enviado con éxito!</p>
+            </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  <div class="copyright-section">
+    <p>2017 &copy; Design Ingeniería Todos los derechos reservados</p>
+    <span class="page-scroll"><a href="#intro"><i class="fa fa-angle-double-up back-to-top"></i></a></span>
+  </div>
+</section>
+
+
