@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: design-page_production
-  username: design-page
-  password: <%= ENV['DESIGN-PAGE_DATABASE_PASSWORD'] %>
+  database: design_production
+  username: deploy
+  password: <%= ENV['DESIGN_DATABASE_PASSWORD'] %>
