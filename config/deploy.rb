@@ -16,7 +16,7 @@ set :stage,         :production
 set :deploy_via,    :remote_cache
 set :linked_files,  %w{config/database.yml config/secrets.yml}
 # set :linked_files,  %w{}
-set :linked_dirs,   %w{bin log config tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
+set :linked_dirs,   %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
 set :deploy_to,     "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 set :ssh_options,   { forward_agent: true, user: fetch(:user), keys: %w(~/.ssh/deploy_rsa.pub) }
 
