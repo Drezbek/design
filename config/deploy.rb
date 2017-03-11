@@ -14,7 +14,8 @@ set :pty,           false
 set :use_sudo,      false
 set :stage,         :production
 set :deploy_via,    :remote_cache
-set :linked_files,  %w{config/database.yml config/secrets.yml}
+#set :linked_files,  %w{config/database.yml config/secrets.yml}
+set :linked_files,  %w{}
 set :linked_dirs,   %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
 set :deploy_to,     "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 set :ssh_options,   { forward_agent: true, user: fetch(:user), keys: %w(~/.ssh/deploy_rsa.pub) }
@@ -29,6 +30,7 @@ set :assets_prefix, 'assets'
 set :rails_assets_groups, nil
 set :normalize_asset_timestamps, %w{public/images public/javascripts public/stylesheets}
 set :keep_assets, nil
+
 
 # Capistrano::Puma options
 set :puma_user, fetch(:user)
@@ -59,21 +61,6 @@ set :puma_run_path, '/usr/local/bin/run-puma'
 set :nginx_sites_available_path,  "/etc/nginx/sites-available"
 set :nginx_sites_enabled_path,    "/etc/nginx/sites-enabled"
 
-# Capistrano::Bundler options
-set :bundle_bins,           fetch(:bundle_bins, []).push('my_new_binary')
-set :bundle_roles,          :all
-set :bundle_servers,        -> { release_roles(fetch(:bundle_roles)) }
-set :bundle_binstubs,       -> { shared_path.join('bin') }
-set :bundle_gemfile,        -> { release_path.join('MyGemfile') }
-set :bundle_path,           -> { shared_path.join('bundle') }
-set :bundle_without,        %w{development test}.join(' ')
-set :bundle_flags,          '--deployment --quiet'
-set :bundle_env_variables,  {}
-set :bundle_clean_options,  ""
-set :bundle_jobs,           nil
-set :bundle_binstubs,       -> { shared_path.join('bin') }
-set :bundle_env_variables, { nokogiri_use_system_libraries: 1 }
-
 # Capistrano::rbenv options
 set :rbenv_type, :user
 #set :rbenv_ruby, '2.4.0'
@@ -82,4 +69,20 @@ set :rbenv_path, '/home/deploy/.rbenv'
 set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
 set :rbenv_map_bins, %w{rake gem bundle ruby rails}
 set :rbenv_roles, :all
+
+# Capistrano::Bundler options
+#set :bundle_bins,           fetch(:bundle_bins, []).push('my_new_binary')
+set :bundle_roles,          :all
+set :bundle_servers,        -> { release_roles(fetch(:bundle_roles)) }
+set :bundle_binstubs,       -> { shared_path.join('bin') }
+set :bundle_gemfile,        -> { release_path.join('Gemfile') }
+set :bundle_path,           -> { shared_path.join('bundle') }
+set :bundle_without,        %w{development test}.join(' ')
+set :bundle_flags,          '--deployment --quiet'
+set :bundle_env_variables,  {}
+set :bundle_clean_options,  ""
+set :bundle_jobs,           nil
+set :bundle_binstubs,       -> { shared_path.join('bin') }
+set :bundle_env_variables,  { }
+
 
