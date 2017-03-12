@@ -85,20 +85,18 @@ Rails.application.configure do
   config.active_record.dump_schema_after_migration = false
 
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.raise_delivery_errors = false
   config.action_mailer.perform_caching = false
   config.action_mailer.perform_deliveries = true
-  config.action_mailer.perform_deliveries = true
   config.action_mailer.delivery_method = :sendmail
-  config.action_mailer.default_url_options = {:host => 'localhost', :port => '3000'}
-  config.action_mailer.default_options = {from: 'robot@des-ing.cl'}
+  config.action_mailer.default_options = {from: ENV['DESIGN_CONTACT_ADRESS']}
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-      address:              'smtp.zoho.com',
-      port:                 465,
-      domain:               'des-ing.cl',
-      user_name:            'robot@des-ing.cl',
-      password:             'robot123456',
+      address:              ENV['DESIGN_CONTACT_ADRESS'],
+      port:                 ENV['DESIGN_CONTACT_PORT'],
+      domain:               ENV['DESIGN_CONTACT_DOMAIN'],
+      user_name:            ENV['DESIGN_CONTACT_USER'],
+      password:             ENV['DESIGN_CONTACT_PASSWORD'],
       authentication:       :plain,
       enable_starttls_auto: true,
       ssl:                  true,
