@@ -15,7 +15,6 @@ set :use_sudo,      false
 set :stage,         :production
 set :deploy_via,    :remote_cache
 set :linked_files,  %w{config/database.yml config/secrets.yml}
-# set :linked_files,  %w{}
 set :linked_dirs,   %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system public/uploads}
 set :deploy_to,     "/home/#{fetch(:user)}/apps/#{fetch(:application)}"
 set :ssh_options,   { forward_agent: true, user: fetch(:user), keys: %w(~/.ssh/deploy_rsa.pub) }
@@ -54,12 +53,12 @@ set :puma_plugins, []  #accept array of plugins
 set :nginx_use_ssl, false
 
 # Capistrano::Puma jungle options
-set :puma_jungle_conf, '/etc/puma.conf'
-set :puma_run_path, '/usr/local/bin/run-puma'
+# set :puma_jungle_conf, '/etc/puma.conf'
+# set :puma_run_path, '/usr/local/bin/run-puma'
 
 # Capistrano::Puma nginx options
-set :nginx_sites_available_path,  "/etc/nginx/sites-available"
-set :nginx_sites_enabled_path,    "/etc/nginx/sites-enabled"
+# set :nginx_sites_available_path,  "/etc/nginx/sites-available"
+# set :nginx_sites_enabled_path,    "/etc/nginx/sites-enabled"
 
 # Capistrano::rbenv options
 set :rbenv_type, :user

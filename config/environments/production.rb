@@ -89,7 +89,7 @@ Rails.application.configure do
   config.action_mailer.perform_caching = false
   config.action_mailer.perform_deliveries = true
   config.action_mailer.delivery_method = :sendmail
-  config.action_mailer.default_options = {from: ENV['DESIGN_CONTACT_ADRESS']}
+  config.action_mailer.default_options = {from: ENV['DESIGN_CONTACT_USER']}
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
       address:              ENV['DESIGN_CONTACT_ADRESS'],
