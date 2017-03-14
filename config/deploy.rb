@@ -30,7 +30,6 @@ set :rails_assets_groups, nil
 set :normalize_asset_timestamps, %w{public/images public/javascripts public/stylesheets}
 set :keep_assets, nil
 
-
 # Capistrano::Puma options
 set :puma_user, fetch(:user)
 set :puma_rackup, -> { File.join(current_path, 'config.ru') }
@@ -57,8 +56,8 @@ set :nginx_use_ssl, false
 # set :puma_run_path, '/usr/local/bin/run-puma'
 
 # Capistrano::Puma nginx options
-# set :nginx_sites_available_path,  "/etc/nginx/sites-available"
-# set :nginx_sites_enabled_path,    "/etc/nginx/sites-enabled"
+set :nginx_sites_available_path,  "/etc/nginx/sites-available"
+set :nginx_sites_enabled_path,    "/etc/nginx/sites-enabled"
 
 # Capistrano::rbenv options
 set :rbenv_type, :user
@@ -71,17 +70,14 @@ set :rbenv_roles, :all
 
 # Capistrano::Bundler options
 #set :bundle_bins,           fetch(:bundle_bins, []).push('my_new_binary')
+set :bundle_bins,           %w{gem rake ruby}
 set :bundle_roles,          :all
 set :bundle_servers,        -> { release_roles(fetch(:bundle_roles)) }
 set :bundle_binstubs,       -> { shared_path.join('bin') }
-set :bundle_gemfile,        -> { release_path.join('Gemfile') }
+set :bundle_gemfile,        nil
 set :bundle_path,           -> { shared_path.join('bundle') }
 set :bundle_without,        %w{development test}.join(' ')
 set :bundle_flags,          '--deployment --quiet'
 set :bundle_env_variables,  {}
 set :bundle_clean_options,  ""
 set :bundle_jobs,           nil
-set :bundle_binstubs,       -> { shared_path.join('bin') }
-set :bundle_env_variables,  { }
-
-
